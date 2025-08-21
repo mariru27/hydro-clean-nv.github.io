@@ -35,6 +35,9 @@
     }
     </script>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -72,10 +75,33 @@
                         </div>
                     </div>
                     
+                    <div class="hero-cta">
+                        <a href="#contacts" class="cta-button" data-lang="ru">Заказать услугу</a>
+                        <a href="#contacts" class="cta-button hidden" data-lang="en">Order Service</a>
+                    </div>
+                    
                     <div class="equipment-grid">
-                        <img src="images/equipment1.jpg" alt="Оборудование для прочистки">
-                        <img src="images/equipment2.jpg" alt="Гидродинамическая машина">
-                        <img src="images/equipment3.jpg" alt="Видеодиагностика">
+                        <div class="equipment-item">
+                            <img src="images/equipment1.jpg" alt="Оборудование для прочистки">
+                            <div class="equipment-overlay">
+                                <h4 data-lang="ru">Профессиональное оборудование</h4>
+                                <h4 data-lang="en" class="hidden">Professional Equipment</h4>
+                            </div>
+                        </div>
+                        <div class="equipment-item">
+                            <img src="images/equipment2.jpg" alt="Гидродинамическая машина">
+                            <div class="equipment-overlay">
+                                <h4 data-lang="ru">Гидродинамическая машина</h4>
+                                <h4 data-lang="en" class="hidden">Hydrodynamic Machine</h4>
+                            </div>
+                        </div>
+                        <div class="equipment-item">
+                            <img src="images/equipment3.jpg" alt="Видеодиагностика">
+                            <div class="equipment-overlay">
+                                <h4 data-lang="ru">Видеодиагностика</h4>
+                                <h4 data-lang="en" class="hidden">Video Diagnostics</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
