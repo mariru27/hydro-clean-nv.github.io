@@ -1065,22 +1065,63 @@ section:nth-child(odd) {
 
 /* Enhanced responsive design */
 @media (max-width: 768px) {
+    /* Compact mobile header */
+    .header {
+        padding: 0.5rem 0;
+    }
+    
+    .nav ul {
+        flex-direction: row;
+        text-align: center;
+        gap: 1rem;
+        padding: 0.5rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .lang-toggle {
+        position: static;
+        transform: none;
+        margin: 0.5rem auto 0;
+        width: auto;
+        max-width: none;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
     .hero {
-        padding: 4rem 0;
+        padding: 2rem 0;
         min-height: auto;
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-description {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .description-item {
+        padding: 1.5rem;
     }
     
     .equipment-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        margin-top: 2rem;
     }
     
     .equipment-grid img {
-        height: 220px;
+        height: 200px;
     }
     
     .equipment-overlay {
@@ -1089,71 +1130,99 @@ section:nth-child(odd) {
     }
     
     .cta-button {
-        padding: 0.875rem 2rem;
-        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
     }
     
     .step, .feature {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem;
     }
     
     .step-number {
-        width: 60px;
-        height: 60px;
-        font-size: 1.6rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
     
     .contact-item {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
-    }
-    
-    .nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-    
-    .lang-toggle {
-        position: static;
-        transform: none;
-        margin-top: 1rem;
-        width: 100%;
-        max-width: 120px;
+        gap: 0.75rem;
+        margin: 1.5rem 0;
+        padding: 1rem;
     }
     
     section {
-        padding: 4rem 0;
+        padding: 2.5rem 0;
+    }
+    
+    /* Reduce hero min-height on mobile */
+    .hero {
+        min-height: 60vh;
     }
 }
 
 @media (max-width: 480px) {
+    /* Ultra-compact header for small mobile */
+    .header {
+        padding: 0.25rem 0;
+    }
+    
+    .nav ul {
+        gap: 0.5rem;
+        padding: 0.25rem 0;
+    }
+    
+    .nav a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .lang-toggle {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+        margin: 0.25rem auto 0;
+    }
+    
     .hero {
-        padding: 3rem 0;
+        padding: 1.5rem 0;
+        min-height: 50vh;
     }
     
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        margin: 1rem 0;
     }
     
     .description-item {
-        padding: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .equipment-grid {
+        margin-top: 1.5rem;
     }
     
     .step, .feature, .full-description {
-        padding: 1.5rem;
+        padding: 1rem;
         margin: 0 0.5rem;
     }
     
     .price-table {
-        padding: 1.5rem;
+        padding: 1rem;
         margin: 0 0.5rem;
     }
     
     .equipment-grid img {
-        height: 180px;
+        height: 160px;
+    }
+    
+    section {
+        padding: 2rem 0;
     }
 }
 
